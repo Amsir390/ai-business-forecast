@@ -51,7 +51,7 @@ Predict sales based on:
 
 ## 🖼 Screenshot
 
-![screenshots](dashboard.png)
+![dashboard.png](dashboard.png)
 
 > Add your screenshot file in the root folder and name it `dashboard.png`
 
