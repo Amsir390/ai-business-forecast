@@ -1,0 +1,155 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #303fe9 0%, #e28de6 100%);
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* ========================= */
+/* GLASS FLOATING NAVBAR */
+/* ========================= */
+
+.navbar {
+  position: sticky;
+  top: 15px;
+  margin: 15px auto;
+  width: 95%;
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  background: rgba(14, 14, 165, 0.862) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.card {
+  border: none !important;
+  border-radius: 18px !important;
+  background: rgb(139, 216, 216) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= */
+/* INPUTS */
+/* ========================= */
+
+.form-select,
+.form-control {
+  border-radius: 10px !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff !important;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  border: none !important;
+  border-radius: 10px !important;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn-dark {
+  background: linear-gradient(90deg, #1f2937, #111827);
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+/* ========================= */
+/* ALERT */
+/* ========================= */
+
+.alert-success {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  color: white !important;
+  border: none !important;
+  border-radius: 14px !important;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* ========================= */
+/* KPI */
+/* ========================= */
+
+.row.text-center h6 {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.row.text-center h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #10b981, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ========================= */
+/* CHART */
+/* ========================= */
+
+.recharts-cartesian-axis-tick-value {
+  fill: #64748b !important;
+}
+
+.recharts-cartesian-grid-horizontal line {
+  stroke: #e2e8f0;
+}
+
+.recharts-wrapper {
+  animation: fadeUp 1s ease forwards;
+}
