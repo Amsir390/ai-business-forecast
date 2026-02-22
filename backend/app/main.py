@@ -6,7 +6,8 @@ app = FastAPI(title="AI Business Analytics Platform")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex="https://ai-business-forecast.onrender.com",
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_origins=["http://localhost:5173"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -15,4 +16,3 @@ app.add_middleware(
 app.include_router(sales.router)
 app.include_router(segmentation.router)
 app.include_router(analytics.router)
-
