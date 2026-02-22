@@ -1,5 +1,4 @@
 
-```markdown
 # 📊 AI Business Analytics Dashboard
 
 A full-stack AI-powered Business Analytics Dashboard built using FastAPI, Machine Learning, and React.
@@ -86,7 +85,7 @@ BUSINESS_AI_PLATFORM/
 │   ├── vite.config.js
 │   └── index.html
 
-````
+```
 
 ---
 
@@ -98,7 +97,7 @@ BUSINESS_AI_PLATFORM/
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
-````
+```
 
 Open:
 
